@@ -4,4 +4,4 @@
 # ================================================ # 
 
 for index, i  in enumerate(range(2, 31, 2), start=1): 
-    print(f"{index}. {i}") 
+    print(f"({index}). {i}") 

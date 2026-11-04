@@ -15,4 +15,21 @@ while n != 1:
         n = (n * 3) 
         print(n) 
 
-check the bug tomorrow, bye now!, for real.
+check the bug tomorrow, bye now!, for real. 
+
+Nov 4, Wednesday, 2026
+Today i replaced the "statement" input variable with a parameter. The value in that parameter comes from the CLI now! Here's how:
+    -  we define a variable where CLI arguments go, commonly parser. Then we do this:
+        `parser = argparse.ArgumentParser()"`
+
+    -  this is used to get the basic stuff like descriptions
+    - next we do this:
+
+        `parser.add_argument()`
+
+    -  This adds any arguments we want to add, all of which have to be inside Quotes. 
+
+## Argparse Optional Flags & Optional Args
+parser.add_argument("text", nargs="?") # Optional positional
+parser.add_argument("-r", "--read", action="store_true") # Flag (-r or --read)
+# Access via args.text and args.read (True/False)
